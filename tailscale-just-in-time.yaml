@@ -21,6 +21,10 @@ on:
         - '1 hour'
         - '12 hours'
         - '1 day'
+      reason:
+        description: Reason for access
+        required: true
+        type: string
 
 jobs:
   request:
