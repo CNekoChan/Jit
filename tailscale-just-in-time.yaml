@@ -27,18 +27,6 @@ on:
         type: string
 
 jobs:
-  request:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: 'Tailscale: Details of Request'
-      run: |
-        echo '####################################################################'
-        echo '#      Source device: ${{ github.event.inputs.source-device }}'
-        echo '#            Posture: ${{ github.event.inputs.posture }}'
-        echo '#     Amount of time: ${{ github.event.inputs.amount-of-time }}'
-        echo '####################################################################'
-
   approve:
     runs-on: ubuntu-latest
     environment: tailscale-prod
