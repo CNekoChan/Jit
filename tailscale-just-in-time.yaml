@@ -21,10 +21,6 @@ on:
         - '1 hour'
         - '12 hours'
         - '1 day'
-      reason:
-        description: Reason for access
-        required: true
-        type: string
 
 jobs:
   request:
@@ -37,7 +33,6 @@ jobs:
         echo '#      Source device: ${{ github.event.inputs.source-device }}'
         echo '#            Posture: ${{ github.event.inputs.posture }}'
         echo '#     Amount of time: ${{ github.event.inputs.amount-of-time }}'
-        echo '#             Reason: ${true}'
         echo '####################################################################'
 
   approve:
