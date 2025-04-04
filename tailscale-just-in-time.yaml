@@ -43,7 +43,7 @@ jobs:
   approve:
     runs-on: ubuntu-latest
     environment: tailscale-prod
-    needs: none
+    needs: true
 
     steps:
     - name: 'Tailscale: Get access token from OAuth Client'
